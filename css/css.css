@@ -1,0 +1,137 @@
+#myVideo {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  min-height: 100vh;
+}
+
+.content {
+  position: fixed;
+  right:0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 1000px;
+  z-index: +3;
+}
+
+.doge-1{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index:+4 ;
+}
+
+.jar {
+margin:20px;
+position:fixed;
+left:30vw;
+height:100%;
+width:40vw;
+overflow-y: scroll;
+text-overflow;
+padding-bottom:20px;
+}
+
+html, body {
+  color: #fff;
+}
+
+p, h1, h2, h3, li {
+	font-family: Averia Libre;
+	text-shadow: 2px 2px #000000;
+}
+
+h1 {
+	font-size:5vw;
+}
+
+
+h2 {
+	font-size:2vw;
+}
+
+a {
+	color:#e1b303;
+	text-shadow: 1px 1px #000000;
+}
+
+.address_doge span{
+	color:#e1b303;
+	background-color:black;
+}
+
+.tiers li span {
+	color:#e1b303;
+	background-color:black;
+}
+
+
+.particle {
+  background-color: #e1b303;
+  opacity: 0;
+  position: absolute;
+  transform: rotate(360deg);
+  transition: transform 1s, left 1s, top 1s, height 0.5s cubic-bezier(0.625, 5.650, 0.495, 1.00), width 0.5s cubic-bezier(0.625, 5.650, 0.495, 1.00), opacity 1s;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: +1;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.jar::-webkit-scrollbar { width: 0 !important }
+.jar { overflow: -moz-scrollbars-none; }
+.jar { -ms-overflow-style: none; }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .doge-1 img{
+	width:300px;
+	opacity:.2;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* Mobile styles go here */
+  
+  
+
+  
+  .doge-1 {
+	  display:none;
+  }
+  
+  .jar {
+	padding:10px;
+	position:fixed;
+	left:0;
+	height:100%;
+	width:90vw;
+	overflow-y: scroll;
+	padding-bottom:20px;
+}
+
+  h1 {
+	font-size:15vw;
+}
+
+h2 span {
+	font-size:4vw;
+}
+
+h2 {
+	font-size: 10vw;	
+}
+}
