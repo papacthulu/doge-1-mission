@@ -31,7 +31,7 @@
 };
 
 html, body {
-  color: #fff;
+  color: #e1b303;
 }
 
 p, h1, h2, h3, li {
@@ -114,14 +114,15 @@ html {
 
 @media screen and (max-width: 1200px) {
   /* Mobile styles go here */
-
-  .doge-1 {
-	  display:none;
-  }
-  
+  .jar {
+	position:fixed;
+	height:100%;
+	margin-left:20vw;
+	margin-right: 20vw;
+	}
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1200px) {
   /* Mobile styles go here */  
   .jar {
 	position:fixed;
@@ -129,21 +130,19 @@ html {
 	margin-left:20vw;
 	margin-right: 20vw;
 	}
-	
-.doge-1 {
-	  display:none;
-  }
 }
 
 @media screen and (max-width: 400px) {
   /* Mobile styles go here */
 
   .jar {
-  margin-left:10px;
-  margin-right:10px;
-  position:fixed;
-  height:100%;
-  overflow-x:hidden;
+	margin-left:1vw;
+	margin-right: 1vw;
+	  position:fixed;
+	  height:100%;
+	overflow-x:hidden;
+	overflow-wrap: break-word;
+    max-width: 79vw;
   }
 
 	h1 {
