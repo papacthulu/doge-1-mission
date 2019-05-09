@@ -76,10 +76,15 @@
 
 		</div>
 	</div>
-	<div class="doge-1">
+	<div id="doge-1" class="doge-1">
 		<img src="media/1.png">
 	</div>
   <footer>
+		<script>
+		setTimeout(function(){
+		$("#doge-1").fadeOut(300);}
+		,1000);
+		</script>
 		<script src="js/index.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
