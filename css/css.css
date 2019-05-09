@@ -7,14 +7,14 @@
 
 .content {
   position: fixed;
-  right:0;
+  left:0;
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   min-width: 100vw;
   min-height: 100vh;
-  max-width: 1000px;
   z-index: +3;
+  overflow-x:hidden;
 }
 
 .doge-1{
@@ -25,22 +25,17 @@
 }
 
 .jar {
-margin:20px;
-position:fixed;
-left:30vw;
-height:100%;
-width:40vw;
-overflow-y: scroll;
-text-overflow;
-padding-bottom:20px;
-}
+	position:fixed;
+	margin-left:20vw;
+    overflow-y: scroll;
+};
 
 html, body {
   color: #fff;
 }
 
 p, h1, h2, h3, li {
-	font-family: Averia Libre;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	text-shadow: 2px 2px #000000;
 }
 
@@ -58,6 +53,13 @@ a {
 	text-shadow: 1px 1px #000000;
 }
 
+.end span {
+  font-family: Averia Libre;
+  text-shadow: 2px 2px #000000;
+  color:#e1b303;
+	background-color:black;
+}
+
 .address_doge span{
 	color:#e1b303;
 	background-color:black;
@@ -67,7 +69,6 @@ a {
 	color:#e1b303;
 	background-color:black;
 }
-
 
 .particle {
   background-color: #e1b303;
@@ -80,12 +81,11 @@ a {
   width: 0;
   z-index: +1;
   border-radius: 50px;
-  overflow: hidden;
 }
 
 .jar::-webkit-scrollbar { width: 0 !important }
 .jar { overflow: -moz-scrollbars-none; }
-.jar { -ms-overflow-style: none; }
+/*.jar { -ms-overflow-style: none; }*/
 
 html {
   box-sizing: border-box;
@@ -97,41 +97,70 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  /* Mobile styles go here */
+  .jar {
+	position:fixed;
+	height:100%;
+	margin-left:20vw;
+	margin-right: 20vw;
+	padding-bottom: 5vh;
+	}
+	
   .doge-1 img{
 	width:300px;
 	opacity:.2;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1200px) {
   /* Mobile styles go here */
-  
-  
 
-  
   .doge-1 {
 	  display:none;
   }
   
+}
+
+@media screen and (min-width: 1500px) {
+  /* Mobile styles go here */  
   .jar {
-	padding:10px;
 	position:fixed;
-	left:0;
 	height:100%;
-	width:90vw;
-	overflow-y: scroll;
-	padding-bottom:20px;
+	margin-left:20vw;
+	margin-right: 20vw;
+	}
+	
+.doge-1 {
+	  display:none;
+  }
 }
 
-  h1 {
-	font-size:15vw;
+@media screen and (max-width: 400px) {
+  /* Mobile styles go here */
+
+  .jar {
+  margin-left:10px;
+  margin-right:10px;
+  position:fixed;
+  height:100%;
+  overflow-x:hidden;
+  }
+
+	h1 {
+	font-size:4vh;
+	}
+
+	h2 {
+		font-size: 3vh;
+	}
+	
+	.addr_header {
+		font-size: 15px !important;
+	}
+  }
 }
 
-h2 span {
-	font-size:4vw;
-}
-
-h2 {
-	font-size: 10vw;	
-}
+.addr_header {	
+color: #e1b303;
+background-color: black;
 }
